@@ -1,6 +1,6 @@
 # BINLookupAPI Python SDK
 
-A production-ready, typed Python SDK for BINLookupAPI.com. Retrieve card network, issuer, country, funding, and quota information from Bank Identification Numbers (BINs).
+A production-ready, typed Python SDK for [BINLookupAPI.com](https://binlookupapi.com). Retrieve card network, issuer, country, funding, and quota information from Bank Identification Numbers (BINs).
 
 ## Features
 
