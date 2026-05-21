@@ -22,7 +22,10 @@ class BINLookupClient:
             self._config = config
         else:
             self._config = normalize_config(config, **kwargs)
-        self._http = httpx.Client(timeout=self._config.timeout)
+        self._http = httpx.Client(
+            timeout=self._config.timeout,
+            headers={"User-Agent": "binlookupapi-py-sdk/0.1.0"},
+        )
 
     def lookup(self, bin: int | str) -> BINLookupResponse:
         number = self._validate_bin(bin)
