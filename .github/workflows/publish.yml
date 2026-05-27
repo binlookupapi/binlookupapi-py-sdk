@@ -26,7 +26,7 @@ jobs:
         run: |
           rm -rf gen
           openapi-python-client generate \
-            --url https://raw.githubusercontent.com/binlookupapi/binlookupapi-ts-sdk/refs/heads/main/openapi.yaml \
+            --url https://binlookupapi.com/openapi.yaml \
             --output-path gen
 
       - name: Commit changes
